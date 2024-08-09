@@ -6,6 +6,8 @@
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/main.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 </head>
 <body>
     
@@ -14,10 +16,10 @@
 
         <nav class="navbar">
             <a href="#" style="--i:1" class="active">Home</a>
-            <a href="./pages/about/index.html" style="--i:2">About</a>
+            <a href="./pages/about/about.html"  style="--i:2">About</a>
             <a href="./pages/skills/skills.html" style="--i:3">Skills</a>
-            <a href="#" style="--i:4">Portfolio</a>
-            <a href="./pages/contact/contact.html" style="--i:5">Contact</a>
+            <a href="" style="--i:4">Portfolio</a>
+            <a href="./pages/contact/contact.html"  style="--i:5">Contact</a>
         </nav>
     </header>
 
@@ -26,11 +28,13 @@
             <h3>Hello, It's Me</h3>
             <h1>Sharifjonov Akbarjon</h1>
             <h3>And I'm a <span>Front-End Developer</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, corrupti nisi nobis perspiciatis fugiat aut. Porro atque assumenda molestias perferendis?</p>
+            <div id="typed-output">
+                <p>ssedws</p>
+            </div> 
 
             <div class="social__media">
                 <a href="#" style="--i:6"><i class='bx bxl-facebook'></i></a>
-                <a href="#" style="--i:7"><i class='bx bxl-twitter' ></i></a>
+                <a href="#" style="--i:7"><i class='bx bxl-telegram' ></i></a>
                 <a href="#" style="--i:8"><i class='bx bxl-instagram-alt' ></i></a>
                 <a href="#" style="--i:9"><i class='bx bxl-linkedin' ></i></a>
             </div>
@@ -52,7 +56,18 @@
 
     
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="./script/app.js"></script>
+ 
+    
+    <script>
+        var options = {
+            strings: ["Salom Dunyo!",  "Ushbu matn avtomatik yozilmoqda."],
+            typeSpeed: 50, // Harf yozish tezligi
+            backSpeed: 25, // Harfni o'chirish tezligi
+            loop: true // Matnni takrorlash
+        };
+
+        var typed = new Typed("#typed-output", options);
+    </script>
 </body>
 </html>
