@@ -6,9 +6,10 @@
 }
 
 body{
-    background: #1f242d;
+    background: linear-gradient(1deg, rgb(20, 63, 106) ,#1f242d );
     color: #fff;
 }
+
 
 .header{
     position: fixed;
@@ -98,6 +99,8 @@ body{
     opacity: 0;
     animation: slideLeft  1s ease forwards;
     animation-delay: 1s;
+    color: salmon;
+    position: relative;
 }
 
 .home__img img{
